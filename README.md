@@ -27,3 +27,23 @@ spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
 spring.jpa.hibernate.ddl-auto=none
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+
+## Como executar
+mvn clean install
+mvn spring-boot:run
+
+http://localhost:8080/clientes
+
+## Usuário e senha de acesso (Basic Auth)
+Usuário: admin
+Senha: admin123
+
+## Endpoints principais
+
+POST /clientes
+GET /clientes
+GET /clientes/{id}
+PUT /clientes/{id}
+DELETE /clientes/{id}
+POST /clientes/{id}/logotipo
+GET /clientes/{id}/logotipo
